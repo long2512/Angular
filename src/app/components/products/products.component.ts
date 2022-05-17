@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component,Input, OnInit } from '@angular/core';
+import { IProduct } from 'src/app/models/product';
 
 @Component({
   selector: 'app-products',
@@ -6,10 +7,14 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./products.component.css']
 })
 export class ProductsComponent implements OnInit {
-
+  @Input('data') productList!: IProduct[];
+  productDeail!: IProduct; // undefined
   constructor() { }
 
   ngOnInit(): void {
+  }
+  showDetail(id: number) {
+    this.productDeail = this.productList.find(item => item.id === id)!;
   }
 
 }

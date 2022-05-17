@@ -1,10 +1,26 @@
 <app-header></app-header>
-<hr />
+<!-- <app-hello [data] = "myName"><app-hello> -->
+<!-- <hr />
 <p>String: {{ productName }}</p>
 <p>Price: {{ productPrice }}</p>
 <p>Status: {{ productStatus }}</p>
 <p>Info: {{ productInfo.name }} - {{ productInfo.price }}</p>
 <p>List: ...</p>
+<button  (click)="onHandleClick()">Click</button>
+<form action="">
+    <input
+      type="text"
+      (keypress)="onHandleKeyPress($event)"
+      value="{{ title }}"
+    />
+    {{ title }}
+</form>
+  <hr>
+  <h2>NgModel</h2>
+  <input type="text" [(ngModel)]="title" value="{{title}}">
+  {{title}}
+
+<div *ngIf="productStatus">
 <table class="table table-bordererd">
   <thead>
     <tr>
@@ -22,11 +38,15 @@
       <td>{{ product.price }}</td>
       <td>{{ product.status ? "Còn hàng" : "hết hàng" }}</td>
       <td>
-        <button class="btn btn-danger">Delete</button>
+        <button (click)="deleteTodo(product.id)" class="btn btn-danger" >Delete</button>
       </td>
+      
     </tr>
   </tbody>
 </table>
-<hr />
+</div>
+<hr /> -->
 <router-outlet></router-outlet>
+<app-products [data]="productList"></app-products>
+<app-product-add (onAdd)="onHandleAdd($event)"></app-product-add>
 
