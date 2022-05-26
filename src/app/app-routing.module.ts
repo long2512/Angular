@@ -1,16 +1,18 @@
-import { NgModule } from '@angular/core';
+import { Component, NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { ProductAddComponent } from './components/product-add/product-add.component';
-import { ProductDetailComponent } from './components/product-detail/product-detail.component';
-import { ProductsComponent } from './components/products/products.component';
-import { AboutComponent } from './pages/about/about.component';
+import { AboutComponent } from './page/about/about.component';
+import { ProductAddComponent } from './product-add/product-add.component';
+import { ProductDetailComponent } from './product-detail/product-detail.component';
+import { ProductEditComponent } from './product-edit/product-edit.component';
+import { ProductComponent } from './product/product.component';
 
 const routes: Routes = [
-  { path: "about", component: AboutComponent },
-  { path: "product", component: ProductsComponent },
-  { path: "product/add", component: ProductAddComponent },
-  { path: "product/:id", component: ProductDetailComponent }
-];
+  {path:"products",component:ProductComponent},
+  {path:"about",component:AboutComponent},
+  { path: "product/:id", component: ProductDetailComponent },
+  {path :"product/add",component:ProductAddComponent},
+  {path:"product/:id/edit",component:ProductEditComponent}
+];  
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],

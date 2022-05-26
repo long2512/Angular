@@ -1,32 +1,33 @@
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { HeaderComponent } from './components/header/header.component';
-import { AboutComponent } from './pages/about/about.component';
-import { ProductComponent } from './components/product/product.component';
-import { ProductsComponent } from './components/products/products.component';
-import { ProductAddComponent } from './components/product-add/product-add.component';
-import { ProductDetailComponent } from './components/product-detail/product-detail.component';
-import { HttpClientModule } from '@angular/common/http'
-import { RouterModule } from '@angular/router';
+import { HeaderComponent } from './header/header.component';
+import { ProductComponent } from './product/product.component';
+import { HelloComponent } from './hello/hello.component';
+import { ProductAddComponent } from './product-add/product-add.component';
+import { AboutComponent } from './page/about/about.component';
+import { ProductDetailComponent } from './product-detail/product-detail.component';
+import { HttpClientModule } from '@angular/common/http';
+import { ProductEditComponent } from './product-edit/product-edit.component';
+
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     ProductComponent,
-    ProductsComponent,
+    HelloComponent,
     ProductAddComponent,
+    AboutComponent,
     ProductDetailComponent,
+    ProductEditComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    HttpClientModule,
-    RouterModule
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

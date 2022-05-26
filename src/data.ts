@@ -1,4 +1,4 @@
-const mockData = [
+const mokData =[
     {
         id: 1,
         name: "product A",
@@ -18,4 +18,4 @@ const mockData = [
         status: true
     }
 ]
-export default mockData;
+export default mokData
