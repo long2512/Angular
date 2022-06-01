@@ -23,7 +23,7 @@ export class ProductEditComponent implements OnInit {
   }
   onUpdate(){
     this.productServices.updateProduct(this.product).subscribe(() => {
-      this.router.navigate(['/products'])
+      this.router.navigate([''])
     })
   }
 }

@@ -1,0 +1,22 @@
+.add{
+    text-decoration: none;
+    color: black;
+}
+.detail{
+    text-decoration: none;
+    color: black;
+}
+.edit{
+    text-decoration: none;
+    color: white;
+    border: 1px solid white;
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-top: 10px;
+    background-color: rgba(166, 248, 15, 0.692);
+}
+.btn{
+    background-color: red;
+    color: white;
+}

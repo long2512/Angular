@@ -19,10 +19,9 @@
         <th scope="col">#</th>
         <th scope="col">Name</th>
         <th scope="col">Price</th>
-        <th scope="col">Starus</th>
-        <th scope="col">Detail</th>
-        <th scope="col"></th>
-        <td><a routerLink="/products/add">Add</a></td>
+        <th scope="col">Status</th>
+        <th scope="col">View</th>
+        <th scope="col"><a class="add" href="/add">Add</a></th>
 
       </tr>
     </thead>
@@ -32,15 +31,13 @@
         <td>{{product.name}}</td>
         <td>{{product.price}}</td>
         <td>{{product.status ? "Còn hàng " : "Hết hàng"}}</td>
-        <td><a routerLink="/product/{{product.id}}">Detail</a></td>
-        <td><button><a routerLink="/product/{{product.id}}/edit">edit</a></button></td>
+        <td><a class="detail" routerLink="/products/{{product.id}}">Detail</a></td>
+        <td><a class="edit" routerLink="/products/{{product.id}}/edit">Edit</a></td>
         <td>
-        
-        <button (click)="onRemoveProduct(product.id)" >Xóa</button>
+          <button class="btn" (click)="onRemoveProduct(product.id)">Xóa</button>
         </td>
-        
-
       </tr>
     </tbody>
   </table>
 </div>
+<router-outlet></router-outlet>

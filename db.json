@@ -24,5 +24,19 @@
       "id": 4,
       "status": false
     }
+  ],
+  "users": [
+    {
+      "email": "buidanglong02@gmail.com",
+      "password": "$2a$10$qdjnh/GBAJ5syP8eymp3.uB87jjmVO.ekycQVIYFuI9TYuUjwt05i",
+      "name": "Long Bui",
+      "id": 1
+    },
+    {
+      "email": "son@gmail.com",
+      "password": "$2a$10$vDKlZT8ljwB2e.0GdgNNzeB8DuFALOludHtmYlt4jmWP1D7SAy31S",
+      "name": "buidanglong",
+      "id": 2
+    }
   ]
 }

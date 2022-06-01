@@ -11,6 +11,8 @@ import { AboutComponent } from './page/about/about.component';
 import { ProductDetailComponent } from './product-detail/product-detail.component';
 import { HttpClientModule } from '@angular/common/http';
 import { ProductEditComponent } from './product-edit/product-edit.component';
+import { LoginComponent } from './login/login.component';
+import { RegisterComponent } from './register/register.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +23,9 @@ import { ProductEditComponent } from './product-edit/product-edit.component';
     ProductAddComponent,
     AboutComponent,
     ProductDetailComponent,
-    ProductEditComponent
+    ProductEditComponent,
+    LoginComponent,
+    RegisterComponent,
   ],
   imports: [
     BrowserModule,
